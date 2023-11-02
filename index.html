@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get my cocktail !</title>
+    <link rel="stylesheet" href="./CSS/CSS-EDIL.css">
+    <link rel="stylesheet" href="./CSS/CSS-ILI.css">
+    <link rel="stylesheet" href="./CSS/CSS-ISAAC.css">
+    <link rel="stylesheet" href="./CSS/CSS-JACK.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Raleway:wght@900&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <!-- please remove name class when starting to figure out html -->
+
+  <body>
+    <section class="ili">
+      <section id="nav-bar">
+        <div class="logo-img">
+          <a href="#home"><img src="assets/logo.png" id="logo" alt="logo-img"></a>
+        </div>
+
+        <div class="icon-button">
+          <button id="nav-expand-button">
+            <span class="visually-hidden">Menu</span>
+            <svg id="menu-icon" viewBox="0 0 100 80" width="30" height="30">
+              <rect width="60" height="13" rx="10"></rect>
+              <rect y="30" width="60" height="13" rx="10"></rect>
+              <rect y="60" width="60" height="13" rx="10"></rect>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu-text">
+          <nav
+            id="main-nav"
+            aria-roledescription="Burger menu"
+            aria-expanded="false"
+          >
+            <ul id="menu-list">
+              <li><a href="#reccomended-drinks">Recommended</a></li>
+              <li><a href="#randomDrinks">Randomise it!</a></li>
+              <li><a href="#main-quiz-title">Quiz</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </section>
+
+    <section id="drink-card-api">
+      <div id="my-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" aria-label="close button">&times;</span>
+
+          <div id="modal-text">
+            <div class="img-container">
+              <img
+                src="https://www.allrecipes.com/thmb/jgUBewi7-dIrLBAgMi6meC7s_zw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/24221-Sex-On-The-Beach-DDMFS-4x3-cd29644eb4e34a63a362584a342b4a30.jpg"
+                id="img-api" alt="cocktail image"
+              >
+            </div>
+
+            <div class="text1-container">
+              <h2 id="drink-title">S*x on the beach</h2>
+              <h3 id="drink-type">alcoholic / non-alcoholic</h3>
+              <table class="table">
+                <tr>
+                  <th>Ingredients</th>
+                  <th>Measurements</th>
+                </tr>
+                <tr>
+                  <td id="ingredient1">Vodka</td>
+                  <td id="measurement1">30ml</td>
+                </tr>
+                <tr>
+                  <td id="ingredient2">Vodka</td>
+                  <td id="measurement2">30ml</td>
+                </tr>
+                <tr>
+                  <td id="ingredient3">Vodka</td>
+                  <td id="measurement3">30ml</td>
+                </tr>
+                <tr>
+                  <td id="ingredient4">Vodka</td>
+                  <td id="measurement4">30ml</td>
+                </tr>
+                <tr>
+                  <td id="ingredient5">Vodka</td>
+                  <td id="measurement5">30ml</td>
+                </tr>
+                <tr>
+                  <td id="ingredient6">Vodka</td>
+                  <td id="measurement6">30ml</td>
+                </tr>
+                <tr>
+                  <td id="ingredient7">Vodka</td>
+                  <td id="measurement7">30ml</td>
+                </tr>
+              </table>
+            </div>
+            <div class="text2-container">
+              <h2>Instructions:</h2>
+              <div class="instruction-wrapper">
+                <p id="instructions">
+                  beep beep beep beep beep beep beep beep beep beep beep beep
+                  beep beep beep beep beep beep beep beep
+                </p>
+              </div>
+              <div class="last-two">
+                <h2>Glass type:</h2>
+                <h3 id="glass-type">beep</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Isaac HTML code goes here -->
+
+    <section class="hero" id="home">
+      <div>
+        <button id="hero-button" type="button">
+          Choose your drink for tonight!
+        </button>
+        <section id="section04" class="demo">
+          <a href="#reccomended-drinks"><span></span></a>
+        </section>
+      </div>
+    </section>
+
+    <section class="reccomended-drinks" id="reccomended-drinks">
+      <h2 class="rec-title">Our Recommendation</h2>
+      <section class="top-picks">
+        <div class="picks-inner">
+          <div class="card green" data-viewing="true" data-number="0">
+            <div class="card-inner">
+              <div class="card-top">
+                <div class="img-c">
+                  <img
+                    src="./content/pylyp-sukhenko-ibh9J-fIgZU-unsplash.webp"
+                    alt="old fashioned cocktail"
+                    width="200px"
+                    class="rec-img-one"
+                  />
+                </div>
+                <div class="main-text-c">
+                  <h2 class="name">Old Fashioned</h2>
+                  <ul class="ingredients">
+                    <li><strong>2 ½ oz</strong> Bourbon</li>
+                    <li><strong>1/2 oz</strong> simple syrup</li>
+                    <li><strong>3</strong> dash Angostura Bitters</li>
+                    <li><strong>1 each</strong> Lemon and orange twist</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="instructions-c">
+                <p class="instructions">
+                  Add the sugar and bitters into a mixing glass, then add the
+                  water, and stir until the sugar is nearly dissolved. <br />
+                  Fill the mixing glass with ice, add the bourbon, and stir
+                  until well-chilled. <br />
+                  Strain into a rocks glass over one large ice cube. <br />
+                  Express the oil of an orange twist over the glass, then drop
+                  into the glass to garnish.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-viewing="false" data-number="1">
+            <div class="card-inner">
+              <div class="card-top">
+                <div class="img-c">
+                  <img
+                    class="rec-img-two"
+                    src="./assets/cosmopolitan.webp"
+                    alt="old fashioned cocktail"
+                    width="200px"
+                  />
+                </div>
+                <div class="main-text-c">
+                  <h2 class="name">Cosmopolitan</h2>
+                  <ul class="ingredients">
+                    <li><strong>1 ½ oz</strong> Absolut Citron</li>
+                    <li><strong>3/4 oz</strong> Cointreau</li>
+                    <li><strong>3/4 oz</strong> Fresh Lime Juice</li>
+                    <li><strong>3/4 oz</strong> Cranberry Juice</li>
+                    <li><strong>Garnish:</strong> Lemon Twist</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="instructions-c">
+                <p class="instructions">
+                  Combine all ingredients in a cocktail shaker with ice.
+                  <br />Shake until cold and strain into a chilled coupe glass.
+                  <br />Garnish with lemon twist.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-viewing="false" data-number="2">
+            <div class="card-inner">
+              <div class="card-top">
+                <div class="img-c">
+                  <img
+                    class="rec-img-three"
+                    src="./assets/Piña-Colada.webp"
+                    alt="old fashioned cocktail"
+                    width="200px"
+                  alt ="card image">
+                </div>
+                <div class="main-text-c">
+                  <h2 class="name">Piña Colada</h2>
+                  <ul class="ingredients">
+                    <li><strong>2 oz</strong> White Rum</li>
+                    <li><strong>2 oz</strong> Coconut Cream</li>
+                    <li><strong>2 oz</strong> Pineapple Juice</li>
+                    <li><strong>Garnish:</strong> Pineapple Leaf</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="instructions-c">
+                <p class="instructions">
+                  Combine all ingredients, except pineapple leaf, into a shaker.
+                  <br />Add ice to fill. <br />Shake vigorously, until shaker is
+                  frosted over. <br />Fill hurricane glass with crushed ice.
+                  <br />Strain cocktail into glass. <br />Garnish with pineapple
+                  leaf and enjoy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg
+          class="left"
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 320 512"
+        >
+          <path
+            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+          />
+        </svg>
+        <svg
+          class="right"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <path
+            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+          />
+        </svg>
+      </section>
+    </section>
+
+    <section class="randomDrinks" id="randomDrinks">
+      <h3 class="random-title">Cocktail Randomiser</h3>
+      <div class="button-container" aria-label="button container">
+        <div class="button-c">
+          <button class="change">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="drinksContainer">
+        <div class="drink-card" data-number="1" data-id="">
+          <img class="drink-img" src="" alt="" srcset="" >
+          <div class="text-c">
+            <h4 class="drink-title">Sex On The Beach</h4>
+            <p class="category">Alcoholic</p>
+          </div>
+        </div>
+        <div class="drink-card" data-number="2" data-id="">
+          <img class="drink-img" src="" alt="" srcset="" >
+          <div class="text-c">
+            <h4 class="drink-title">Sex On The Beach</h4>
+            <p class="category">Alcoholic</p>
+          </div>
+        </div>
+        <div class="drink-card" data-number="3" data-id="">
+          <img class="drink-img" src="" alt="" srcset="" >
+          <div class="text-c">
+            <h4 class="drink-title">Sex On The Beach</h4>
+            <p class="category">Alcoholic</p>
+          </div>
+        </div>
+        <div class="drink-card" data-number="4" data-id="">
+          <img class="drink-img" src="" alt="" srcset="" >
+          <div class="text-c">
+            <h4 class="drink-title">Sex On The Beach</h4>
+            <p class="category">Alcoholic</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="edil">
+      <!-- Edil HTML code goes here -->
+
+      <h2 class="main-quiz-title" id="main-quiz-title">Quiz Time</h2>
+      <div class="quiz-wrapper">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <h1 class="quiz-title">Test Your know knowledge</h1>
+            <div id="score-container" class="quiz-score">
+              <span id="correct-score"></span>/<span id="total-question"></span>
+            </div>
+          </div>
+
+          <div class="quiz-body">
+            <h2 class="quiz-question" id="question"></h2>
+            <ul class="quiz-options"></ul>
+            <div id="result"></div>
+          </div>
+
+          <div class="quiz-footer">
+            <button class="quiz-btn" id="check-btn">Check Answer</button>
+            <button class="quiz-btn" id="play-again-btn">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h1>Find Your Perfect Drink</h1>
+      <div class="footer-quote">
+        <q
+          >To me <b><i>'Drink Responsibly'</i></b> means don't spill it.</q
+        >
+      </div>
+      <div class="footer-con">
+        <div class="footer-links">
+          <div class="footer-link">
+            <li><a href="#">Alcoholic Drinks</a></li>
+            <li><a href="#">Non-alcoholic Drinks</a></li>
+          </div>
+          <div class="footer-link">
+            <li><a href="#">Cocktail</a></li>
+            <li><a href="#">Beverages</a></li>
+          </div>
+        </div>
+
+        <div class="footer-input">
+          <form action="">
+            <p></p>
+            <label for="input">Send this page too yourself</label>
+            <input
+              id="input"
+              class="email"
+              type="email"
+              placeholder="Your email here"
+            />
+            <button class="email-btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <svg
+          class="social-media"
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+          />
+        </svg>
+        <svg
+          class="social-media"
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
+          />
+        </svg>
+        <svg
+          class="social-media"
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"
+          />
+        </svg>
+        <svg
+          class="social-media"
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+          />
+        </svg>
+        <svg
+          class="social-media"
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"
+          />
+        </svg>
+      </div>
+      <div class="sub-note">
+        <p>Privacy Policy</p>
+        <p>Terms & Condition</p>
+      </div>
+    </footer>
+    <script src="./JS/modal.js"></script>
+    <script src="./JS/quiz.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/carousels.js"></script>
+    <script src="./JS/script-iLi.js"></script>
+  </body>
+</html>

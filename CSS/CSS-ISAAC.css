@@ -1,0 +1,129 @@
+:root {
+  --white: #ffffea;
+  --sixty: #89e5e4;
+  --thirty: #c3acce;
+  --ten: #ffed66;
+  --heading: "Raleway", sans-serif;
+  --text: "Montserrat", sans-serif;
+  --thirtyDDARKER: #9a79a9;
+  --thirtyDDDARKER:rgb(78, 51, 90);
+  --sixtyTRANSPARENT: #89e5e392;
+}
+
+.hero {
+  background-image: url("../assets/kobby-mendez-xBFTjrMIC0c-unsplash.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  top: -6svh;
+  background-attachment: fixed;
+  clip-path: circle(100svh at 50% 0);
+}
+
+/* Positioning of button in hero section */
+#hero-button {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Hero Button Styling */
+#hero-button {
+  border: none;
+  line-height: 1.5rem;
+  opacity: 60%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 300;
+  /* font-style: italic; */
+  font-family: var(--heading);
+  letter-spacing: 0.1rem;
+  color: var(--white);
+  border-radius: 1.9rem;
+  background-color: transparent;
+  /* border: 1px solid var(--sixty); */
+  text-decoration: none;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) 2s;
+  padding: 0.3rem;
+}
+
+#hero-button:hover {
+  background-image: linear-gradient(to right, transparent, var(--ten)70%);
+  color: var(--thirtyDDDARKER);
+  padding: 0.3rem 0.7rem 0.7rem 3.5rem;
+  border-radius: 1rem;
+}
+
+
+/* // iLi: added a scroll down arrow */
+#section04 a {
+  padding-top: 60px;
+}
+
+#section04 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 4px solid var(--white);
+  border-bottom: 4px solid var(--white);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: arrow 2s infinite;
+  animation: arrow 2s infinite;
+  box-sizing: border-box;
+  opacity: 50%;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes arrow {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+.demo a {
+  position: absolute;
+  bottom: -1.2rem;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  cursor: pointer;
+  padding: none;
+}
+
+.demo a:hover {
+  opacity: .5;
+  all: unset;
+  cursor: pointer;
+  animation-play-state: paused;
+}

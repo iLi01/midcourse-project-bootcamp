@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+  --white: #ffffea;
+  --sixty: #89e5e4;
+  --thirty: #c3acce;
+  --ten: #ffed66;
+
+  --headerFont:'Raleway';
+  --bodyFont: 'Montserrat';
+}
+
+.main-quiz-title{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--headerFont);
+}
+
+.quiz-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway';
+  border: none;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.quiz-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--ten);
+  padding: 1rem;
+  background-color: var(--white);
+
+}
+
+.quiz-title{
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.quiz-score{
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  border: 1px solid var(--ten);
+  /* width: 75%; */
+  justify-content: center;
+}
+
+.quiz-question{
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.quiz-options{
+  font-family: 'Montserrat';
+  list-style: none;
+}
+
+.quiz-options li{
+  border-radius: 0.5rem;
+  border: 1px solid var(--thirty);
+  margin: 0.5rem 0;
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  background-color: var(--thirty);
+  color: black;
+  transition: all 300ms ease-in-out;
+}
+
+.quiz-options li:hover{
+  background-color: var(--sixty);
+  border: 1px solid var(--sixty);
+  color: black;
+}
+
+.quiz-options li:active{
+  transform: scale(0.97);
+}
+
+.selected{
+  background-color:var(--sixty) !important;
+  border: 1px solid var(--sixty) !important;
+  color: black !important;
+  transition: all 300ms ease-in-out;
+}
+
+.quiz-btn{
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--ten);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 0 0 var(--thirty);
+  transition: all 300ms ease-in-out;
+  outline: 0;
+  display: block;
+}
+
+.quiz-btn:hover{
+  background-color: var(--white);
+  box-shadow: 0 2px 0 0 var(--thirty);
+}
+
+.quiz-btn:active{
+  transform: scale(0.95);
+}
+
+.quiz-center{
+  text-align: center;
+}
+
+#play-again-btn{
+  display: none;
+}
+
+footer{
+  height: 25%;
+  background-color: var(--sixty);
+  padding: 1rem;
+}
+footer h1{
+  text-align: center;
+}
+
+.footer-con{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer-links{
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+.footer-link{
+  font-size: 16px;
+}
+.footer-link li{
+  list-style: none;
+  margin: 0.5rem 0;
+}
+.footer-link li a{
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+label{
+  display: block;
+}
+
+.email{
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+.email-btn{
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.email-btn:hover{
+  background-color:  var(--ten);
+}
+
+.social-media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.sub-note{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  
+}
+
+.footer-quote{
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  margin: 1rem 0;
+}
+.footer-quote i{ 
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 900px){
+  .footer-con{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 0 2rem;
+  }
+  footer h1{
+    text-align: start;
+  }
+  .sub-note{
+    justify-content: end;
+  }
+}
