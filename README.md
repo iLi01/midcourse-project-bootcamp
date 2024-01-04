@@ -1,6 +1,6 @@
 # Front End Development Midcourse Assignment
 
-A week-long, group exercise for FED with Purple Beard.
+A week-long, group exercise for the bootcamp.
 
 ## Objective
 
@@ -8,6 +8,7 @@ The objective of this assignment is to create a static web application using HTM
 
 Each team will be responsible for producing one web app, ensuring the validity of HTML5 structure, responsiveness of CSS, and clean and error-free JavaScript code.
 
+## Screenshots
 
 ![chrome_3Gl7TV0dD0](https://github.com/iLi01/midcourse-project-bootcamp/assets/140189297/9da59329-209c-46dc-ab70-9eb10213ef12)
 ![chrome_Jhue8Ygcsd](https://github.com/iLi01/midcourse-project-bootcamp/assets/140189297/59a1e7fc-32b5-4a8e-9b94-dfd685f1f47e)
